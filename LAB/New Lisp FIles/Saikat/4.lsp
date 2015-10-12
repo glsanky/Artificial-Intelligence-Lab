@@ -1,0 +1,7 @@
+(set 'phrase '("the" "quick" "brown" "fox" "jumped" "over" "the" "lazy" "dog"))
+
+(set 'a (length phrase))
+
+(set 'inp (int (read-line)))
+
+(union (slice phrase 0 inp) (slice phrase (+ inp 1) a))
